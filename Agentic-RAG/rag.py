@@ -157,9 +157,12 @@ def generate(state: AgentState):
     results = get_retriever_results(messages)
     
     if not results:
-        return {"messages": [AIMessage(content="I don't have enough information in my experiences to answer that question.")]}
+        return {"messages": [AIMessage(content="I don't have enough information about that to answer that question.")]}
     
     context = "\n".join(results.values())
+    
+    anime_searched = "anime_experience" in results
+    game_searched = "game_experience" in results
     
     system_prompt = """You are Anubhav. Answer based on the context provided.
 
@@ -168,7 +171,11 @@ IMPORTANT:
 - For list questions, provide all matching items
 - For favorites/highest rated, identify highest rating from context
 - Only use information from context
-- If insufficient info, say you don't have enough information"""
+- If the user asks about a SPECIFIC title (anime/game) and it's NOT mentioned in the context:
+  * For anime: Say "No, I haven't watched [title]."
+  * For games: Say "No, I haven't played [title]."
+- If the context contains info about the asked title, provide a detailed answer
+- For general questions, use all relevant context"""
     
     prompt = ChatPromptTemplate.from_messages([
         ("system", system_prompt),
@@ -180,19 +187,40 @@ IMPORTANT:
     return {"messages": [AIMessage(content=response)]}
 
 def not_found(state: AgentState):
-    """Handle case when no results found."""
+    """Handle case when no results found - respond that we haven't watched/played it."""
     messages = state["messages"]
+    question = messages[0].content
+    
+    entity_name = None
+    for keyword in ["about", "think about", "opinion on", "watch", "play", "like"]:
+        if keyword in question.lower():
+            parts = question.lower().split(keyword)
+            if len(parts) > 1:
+                entity_name = parts[-1].strip().rstrip("?").strip()
+                # Capitalize properly
+                entity_name = " ".join(word.capitalize() for word in entity_name.split())
+                break
+    
     anime_searched = any(msg.type == "tool" and msg.name == "anime_experience" for msg in messages)
     game_searched = any(msg.type == "tool" and msg.name == "game_experience" for msg in messages)
     
     if anime_searched and game_searched:
-        response = "I don't have enough information in my experiences to answer that question."
+        if entity_name:
+            response = f"No, I haven't watched or played {entity_name}."
+        else:
+            response = "No, I haven't watched or played that."
     elif anime_searched:
-        response = "I don't have any personal experience or information about that in my anime database."
+        if entity_name:
+            response = f"No, I haven't watched {entity_name}."
+        else:
+            response = "No, I haven't watched that anime."
     elif game_searched:
-        response = "I don't have any personal experience or information about that in my game database."
+        if entity_name:
+            response = f"No, I haven't played {entity_name}."
+        else:
+            response = "No, I haven't played that game."
     else:
-        response = "I don't have enough information in my experiences to answer that question."
+        response = "I don't have any information about that."
     
     return {"messages": [AIMessage(content=response)]}
 
