@@ -1,0 +1,127 @@
+{
+  "anime_experiences": [
+    {
+      "title": "Death Note",
+      "experience": "I watched Death Note and it completely changed my perspective on psychological thrillers. I was fascinated by the cat-and-mouse game between Light and L. He binge-watched the entire series in one weekend. He rates it 9/10. I think Light was indeed smarter than L",
+      "rating": 9.0,
+      "year_watched": 2024,
+      "favorite_character": "Light Yagami",
+      "thoughts": "The intellectual battle between Light and L is unmatched. The second half was weaker but still great overall."
+    },
+    {
+      "title": "Haikyuu!!",
+      "experience": "I considered Haikyuu as the perfect anime. It teaches you the kind of success with comes with joy of the journey. Hinata is a short volleyball player who has lot of gaps and not so good but he keep training relentlessly and loves volleyball(his field). The kind of success which comes with joy of the journey rather than the outcome.",
+      "rating": 10.0,
+      "year_watched": 2025,
+      "favorite_character": "Hinata",
+      "thoughts": "Being strong means being free is the motto of the anime. It means in order to truly enjoy your craft or line of field you need to become good at it. This is one of the best anime I have watched."
+    },
+    {
+      "title": "Great Teacher Onizuka",
+      "experience": "I watched Great Teacher Onizuka and it was not a great anime. It was a comedy anime and it was a great way to learn about the Japanese education system. I loved the characters and the story. I rated it 5/10. It involved lot of sex jokes even on underage girls.",
+      "rating": 5.0,
+      "year_watched": 2024,
+      "favorite_character": "Onizuka",
+      "thoughts": "The sexualisation of the young girl was the problem and story was also kind of boring."
+    },
+    {
+      "title": "Jujutsu Kaisen",
+      "experience": "I liked Jujutsu Kaisen and loves the modern shonen approach. It talks about power system and hierarchy which depends on the natural birth. I don't really liked this idea and one charater I liked the most breaking this hierarchy through consistent training and effort was toji fushiguro.",
+      "rating": 9.0,
+      "year_watched": 2025,
+      "favorite_character": "Toji Fushiguro",
+      "thoughts": "Liked the way toji fushiguro broke the hierarchy through consistent training and effort. He became sorcerer killer and defeated top power sorcerer through sheer power of will and effort."
+    },
+    {
+      "title": "Naruto",
+      "experience": "The most watched anime of the world I watched it in 2019 and it was also my first anime. I realy loved the entire shinobi concept. I watched naruto multiple times and recently I liked  Might guy the most of all of them. Naruto anime showed never to give up on your dreams",
+      "rating": 10.0,
+      "year_watched": 2019,
+      "favorite_character": "Might Guy",
+      "thoughts": "Every character has a story to tell and Naruto anime showed that. Good fights and additive to watch. Might Guy inspired me the most a man without any special powers became one of the strongest character through relentless training and effort. He considered Kakashi as rival and kept positive attitude no matter how many times he lost to him and eventually surpassed him."
+    },
+    {
+      "title": "My Hero Academia",
+      "experience": "I has been following My Hero Academia since 2025. I enjoyed the superhero setting and character development, though he thinks some arcs drag on. He particularly loved the Sports Festival and Hero Killer arcs. I rates it 8/10.",
+      "rating": 8.0,
+      "year_watched": 2025,
+      "favorite_character": "Deku",
+      "thoughts": "Solid shonen with great moments, but pacing can be an issue."
+    }
+  ],
+  "game_experiences": [
+    {
+      "title": "God of War (2018)",
+      "experience": "I played God of War in 2024 and was moved by the father-son relationship between Kratos and Atreus. The combat is satisfying and the story is emotional. He rates it 9.5/10.",
+      "rating": 9.5,
+      "year_played": 2021,
+      "platform": "PS5",
+      "playtime_hours": 60,
+      "thoughts": "A perfect blend of action and storytelling. The Leviathan Axe feels amazing. The gameplay was lit."
+    },
+    {
+      "title": "Red Dead Redemption 2",
+      "experience": "I played Red Dead Redemption 2 in 2024 and was blown away by the attention to detail and immersive world. I spent hours just exploring and hunting. The story's ending made me emotional. I rates it 10/10.",
+      "rating": 10.0,
+      "year_played": 2024,
+      "platform": "PS5",
+      "playtime_hours": 96,
+      "thoughts": "Rockstar's masterpiece. The world feels alive and the story is unforgettable. Everything from story to gameplay was lit and this is the best game I ever played."
+    },
+    {
+      "title": "Cyberpunk 2077",
+      "experience": "I played Cyberpunk 2077 on PS5. I enjoyed the idea of my customising character. I choose a female V and ofcourse fallen in love with her.I always customize her with most stylish clothes and makeup. I made her best merc in the town and completed every Gig",
+      "rating": 9.0,
+      "year_played": 2023,
+      "platform": "PS5",
+      "playtime_hours": 80,
+      "thoughts": "The customization of character made me addicted to the game. It feels like I am living my alter ego"
+    },
+    {
+      "title": "FC 25",
+      "experience": "I played FC 25 though it's looks same as FC 24 but as usual all football games of EA sports are addictive. I mostly played career mode with a japanese character playing for Man Utd. And outside career mode I always choose Inter Miami or Argentina as my team due to my love for Messi.",
+      "rating": 8.0,
+      "year_played": 2025,
+      "platform": "PS5",
+      "playtime_hours": 130,
+      "thoughts": "A masterpiece of indie game design. The world is hauntingly beautiful."
+    },
+    {
+      "title": "GTA 5",
+      "experience": "I played GTA 5 on PC and it was a great experience. I loved the open world and the freedom of exploration. I spent hours just exploring the city and completing missions. The story was also good and I loved the characters. I rated it 10/10.",
+      "rating": 10.0,
+      "year_played": 2015,
+      "platform": "PC",
+      "playtime_hours": 130,
+      "thoughts": "The open world and the freedom of exploration was the best part of the game. The story was also good and I loved the characters. The gameplay was also good and I loved the missions. The graphics were also good and I loved the city."
+    },
+    {
+      "title": "GTA 5",
+      "experience": "I played GTA 5 on PC and it was a great experience. I loved the open world and the freedom of exploration. I spent hours just exploring the city and completing missions. The story was also good and I loved the characters. I rated it 10/10.",
+      "rating": 10.0,
+      "year_played": 2015,
+      "platform": "PC",
+      "playtime_hours": 130,
+      "thoughts": "The open world and the freedom of exploration was the best part of the game. The story was also good and I loved the characters. The gameplay was also good and I loved the missions. The graphics were also good and I loved the city."
+    },
+    {
+      "title": "Last Of Us",
+      "experience": "I liked the gameplay a lot specially the combat system and how you need to be resourceful like finding bullets and other stuff. I liked the story a lot and how it was a slow burn. Though ending I disagree that Jeol should not have saved Ellie.",
+      "rating": 10.0,
+      "year_played": 2024,
+      "platform": "PS5",
+      "playtime_hours": 90,
+      "thoughts": "Apart from the ending I liked the game a lot. The gameplay was good and the story was good. The characters were good and the graphics were good."
+    },
+    {
+      "title": "Mafia",
+      "experience": "The gameplay was really good I liked being a gangstart trying to build his reputation and power from ground up. The story was good and the characters were good. The graphics were good and the gameplay was good. The only problem was the game was buggy",
+      "rating": 6.0,
+      "year_played": 2024,
+      "platform": "PS5",
+      "playtime_hours": 65,
+      "thoughts": "Game was very buggy and had lot of issues. The story was good and the characters were good. The graphics were good and the gameplay was good.After some mission no new mission was available and the game was stuck. So I was unable to complete the game."
+    }
+  ]
+}
+
