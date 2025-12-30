@@ -46,7 +46,6 @@ game_retriever_tool = create_retriever_tool(
 web_search = TavilySearch(max_results=3)
 tools = [anime_retriever_tool, game_retriever_tool, web_search]
 
-# Helper function to check if question is general
 def is_general_question(question: str) -> bool:
     """Use LLM to determine if question is general or mentions specific entity."""
     class QuestionType(BaseModel):
@@ -135,7 +134,7 @@ Return "unknown" if cannot determine.""")
     elif result.entity_type == "game":
         model = model.bind_tools([game_retriever_tool])
         system_msg = f"You must use the game_experience tool to search for information about '{result.entity_name}'. Always call the tool."
-    else:  # both
+    else:
         model = model.bind_tools([anime_retriever_tool, game_retriever_tool])
         system_msg = f"You must use both anime_experience and game_experience tools to search for information about '{result.entity_name}'. Always call the tools."
     
@@ -148,11 +147,7 @@ def check_results(state: AgentState) -> Literal["generate", "not_found"]:
     
     if not results:
         return "not_found"
-    
-    # if "anime_experience" in results and "game_experience" in results:
-    #     return "generate"
-    
-    # return "generate"
+
     return "generate"
 
 def generate(state: AgentState):
@@ -201,7 +196,6 @@ def not_found(state: AgentState):
     
     return {"messages": [AIMessage(content=response)]}
 
-# Routing functions
 def route_after_tools(state: AgentState) -> Literal["classify_entity", "generate", "not_found"]:
     """Route after tool execution."""
     messages = state["messages"]

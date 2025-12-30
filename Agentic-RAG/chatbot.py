@@ -9,7 +9,7 @@ load_dotenv()
 
 # Page configuration
 st.set_page_config(
-    page_title="Anubhav's RAG Chatbot",
+    page_title="Anubhav's Hobby Alter EGO",
     page_icon="🤖",
     layout="wide"
 )
@@ -22,7 +22,7 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 # Title and description
-st.title("Anubhav's RAG Chatbot")
+st.title("ANUBHAV'S HOBBY ALTER EGO")
 st.markdown("""
 Ask me about anime or games! I can share my personal experiences and thoughts about them.
 """)
