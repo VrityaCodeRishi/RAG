@@ -1,5 +1,10 @@
 ## Corrective RAG (Recipe Assistant)
 
+### What is Corrective RAG?
+**Corrective RAG** is a Retrieval-Augmented Generation approach where the system **doesn’t blindly trust retrieval**.
+It first retrieves context from a vector database, then **grades whether that context is actually relevant** to the user’s question.
+If the context is weak/irrelevant (or nothing is retrieved), the system **corrects the path** by rewriting the query and using **web search** to fetch better evidence, and only then generates the final answer.
+
 ### What this project is
 This folder contains a **Corrective RAG** implementation for a **recipe + cooking assistant**:
 
