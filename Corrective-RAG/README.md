@@ -87,21 +87,21 @@ Given a user question:
 
 ```mermaid
 flowchart TD
-  U[User Question] --> R[Retrieve (Chroma Vector DB)]
-  R --> G[Grade Documents (LLM)]
+  U["User Question"] --> R["Retrieve - Chroma Vector DB"]
+  R --> G["Grade Documents - LLM"]
   G --> D{Decision}
 
-  D -->|All relevant| GEN[Generate Answer (LLM)]
-  D -->|Missing/Not relevant| T[Transform Query (LLM)]
-  T --> W[Web Search (Tavily)]
+  D -->|All relevant| GEN["Generate Answer - LLM"]
+  D -->|Missing or not relevant| T["Transform Query - LLM"]
+  T --> W["Web Search - Tavily"]
   W --> GEN
 
   subgraph Storage
-    C[(Chroma DB: ./chroma_db/recipes)]
+    C[("Chroma DB - chroma_db/recipes")]
   end
 
   R --- C
-  GEN --> OUT[Final Answer]
+  GEN --> OUT["Final Answer"]
 ```
 
 
