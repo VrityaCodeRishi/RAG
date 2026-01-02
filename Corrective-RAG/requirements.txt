@@ -1,0 +1,11 @@
+python-dotenv
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-tavily
+langgraph
+chromadb
+openai
+pydantic
+streamlit

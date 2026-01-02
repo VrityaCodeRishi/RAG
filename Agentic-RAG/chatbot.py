@@ -66,7 +66,7 @@ if prompt := st.chat_input("Ask me about anime or games..."):
     with st.chat_message("user"):
         st.markdown(prompt)
     
-    # Generate response using the RAG graph
+
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             try:

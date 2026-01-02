@@ -141,6 +141,7 @@ cython_debug/
 
 # ChromaDB - Vector Database
 Agentic-RAG/chroma_db/
+Corrective-RAG/chroma_db/
 
 # IDE
 .idea/
